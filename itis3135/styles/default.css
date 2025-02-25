@@ -58,3 +58,21 @@ ul {
 strong {
     color: #000000;
 }
+
+a {
+    color: #333; 
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6699;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #555; 
+}
+
+a:active {
+    color: #cc3366;
+}
