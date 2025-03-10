@@ -76,3 +76,46 @@ a:visited {
 a:active {
     color: #cc3366;
 }
+
+main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    main {
+        width: 95%;
+    }
+
+    .container {
+        max-width: 700px;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .container{
+        max-width: 100%;
+        padding: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
