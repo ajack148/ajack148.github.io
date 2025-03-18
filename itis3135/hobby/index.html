@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hobby</title>
+    <link rel="icon" href="images/download-games-png-transparent-for-designing-work-5.png" type="image/png">
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach((section) => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1d3557;
+            color: #f1faee;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+
+        header, footer {
+            background-color: #457b9d;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #f1faee;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #f1faee;
+            background-color: #e63946;
+            padding: 8px 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #a8dadc;
+            color: #1d3557;
+        }
+
+        nav img {
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+
+        main section {
+            display: none;
+            padding: 1.5rem;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #457b9d;
+            border-radius: 5px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        img, nav a, figure, main section {
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #f1faee;
+            border-bottom: 2px solid #a8dadc;
+            padding-bottom: 5px;
+        }
+
+        figure img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+        }
+
+        figure {
+            margin-bottom: 0.5rem;
+        }
+
+        figcaption {
+            color: #f1faee;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+
+        figure + p em {
+            font-size: 0.85rem;
+            color: #cccccc;
+            display: block;
+            margin-top: 0.2rem;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #f1faee;
+        }
+
+        footer a:hover {
+            color: #e63946;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Gaming Hobby</h1>
+        <nav>
+            <a href="#" onclick="showSection('who')" role="button">Who</a>
+            <img src="images/download-games-png-transparent-for-designing-work-5.png" alt="divider" width="16" height="16">
+            <a href="#" onclick="showSection('what')" role="button">What</a>
+            <img src="images/download-games-png-transparent-for-designing-work-5.png" alt="divider" width="16" height="16">
+            <a href="#" onclick="showSection('when')" role="button">When</a>
+            <img src="images/download-games-png-transparent-for-designing-work-5.png" alt="divider" width="16" height="16">
+            <a href="#" onclick="showSection('where')" role="button">Where</a>
+            <img src="images/download-games-png-transparent-for-designing-work-5.png" alt="divider" width="16" height="16">
+            <a href="#" onclick="showSection('how')" role="button">How</a>
+            <img src="images/download-games-png-transparent-for-designing-work-5.png" alt="divider" width="16" height="16">
+            <a href="#" onclick="showSection('why')" role="button">Why</a>
+            <img src="images/download-games-png-transparent-for-designing-work-5.png" alt="divider" width="16" height="16">
+            <a href="#" onclick="showSection('ai-prompts')" role="button">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Who -->
+        <section id="who">
+            <h2>About Me!</h2>
+            <p>I am a gamer that loves to immerse herself in different worlds, stories, and challenges that video games offer!</p>
+            <p>I usually enjoy casual gaming, spending time relaxing with my favorite titles and exploring different genres. However, I dream of going competitive in the future, diving into the esports scene whenever the opportunity arises.</p>
+            <figure>
+                <img src="images/ai-gen-pcset.webp" alt="Gamer setup">
+                <figcaption>My gaming setup!</figcaption>
+            </figure>
+            <p><em>AI Prompt: "A photorealistic image of a modern gaming setup featuring dual monitors with RGB lighting, a mechanical keyboard, gaming mouse, and a sleek gaming chair."</em></p>
+        </section>
+
+        <!-- What -->
+        <section id="what">
+            <h2>About Gaming</h2>
+            <p>Gaming is the interactive experience of playing video games, offering entertainment, challenge, and community.</p>
+            <p>From storytelling in RPGs to fast-paced action in FPS games, gaming covers countless genres and styles.</p>
+            <figure>
+                <img src="images/steam-screenshot.png" alt="Various video games shown in Steam">
+                <figcaption>Different types of video games shown in my Steam library.</figcaption>
+            </figure>
+            <p><em>This is a screenshot from my own Steam app, not AI-generated.</em></p>
+        </section>
+
+        <!-- When -->
+        <section id="when">
+            <h2>When to Play</h2>
+            <p>Gaming fits into many schedules whether it’s a weekend marathon or short daily sessions after work or school.</p>
+            <p>Special gaming events like game launches or tournaments also add excitement to the calendar.</p>
+            <figure>
+                <img src="images/ai-gen-pcgame.webp" alt="Gaming at night">
+                <figcaption>Late-night gaming session</figcaption>
+            </figure>
+            <p><em>AI Prompt: "A photorealistic image of a person gaming at night in a dimly lit room with ambient RGB lighting and glowing screens."</em></p>
+        </section>
+
+        <!-- Where -->
+        <section id="where">
+            <h2>Best Places to Game</h2>
+            <p>Whether at home in a dedicated gaming room or at a bustling esports arena, gaming can be enjoyed anywhere.</p>
+            <p>Online platforms also allow gamers to connect virtually across the globe.</p>
+            <figure>
+                <img src="images/ai-gen-esports.webp" alt="Esports arena">
+                <figcaption>Exciting esports tournament</figcaption>
+            </figure>
+            <p><em>AI Prompt: "A photorealistic image of an exciting esports tournament in a large arena, with a packed crowd and colorful stage lighting."</em></p>
+        </section>
+
+        <!-- How -->
+        <section id="how">
+            <h2>How to Get Started</h2>
+            <p>Start with a basic gaming setup: a console, PC, or even your phone! Next, a decent internet connection, and your favorite games.</p>
+            <p>Join communities, watch tutorials, and experiment with different genres to find what you enjoy most.</p>
+            <figure>
+                <img src="images/ai-gen-consolegame.webp" alt="Console gaming">
+                <figcaption>Beginner-friendly gaming setup</figcaption>
+            </figure>
+            <p><em>AI Prompt: "A photorealistic image of a person sitting on a couch using a video game console controller, playing on a large screen."</em></p>
+        </section>
+
+        <!-- Why -->
+        <section id="why">
+            <h2>Why I Love Gaming</h2>
+            <p>Gaming is a very fun activity! It allows me to relax, challenge myself, and stay connected with friends.</p>
+            <p>It provides a blend of creativity, strategy, and fun that few other hobbies can match.</p>
+            <figure>
+                <img src="images/ai-gen-friends.webp" alt="Friends gaming together">
+                <figcaption>Gaming brings people together</figcaption>
+            </figure>
+            <p><em>AI Prompt: "A photorealistic image of a group of friends sitting on a couch, playing video games together with controllers in hand."</em></p>
+        </section>
+
+        <!-- AI Prompts -->
+        <section id="ai-prompts">
+            <h2>AI Prompts Used / ChatGPT 4o</h2>
+            <ul>
+                <li>"A photorealistic image of a modern gaming setup featuring dual monitors with RGB lighting, a mechanical keyboard, gaming mouse, and a sleek gaming chair."</li>
+                <li>"A photorealistic image of a person gaming at night in a dimly lit room with ambient RGB lighting and glowing screens."</li>
+                <li>"A photorealistic image of an exciting esports tournament in a large arena, with a packed crowd and colorful stage lighting."</li>
+                <li>"A photorealistic image of a person sitting on a couch using a video game console controller, playing on a large screen."</li>
+                <li>"A photorealistic image of a group of friends sitting on a couch, playing video games together with controllers in hand."</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+        <p><a href="https://jaxenterpriser.com/index.html">Jackson Enterprises ©2025</a></p>
+    </footer>
+</body>
+
+</html>
