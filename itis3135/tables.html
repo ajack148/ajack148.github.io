@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaliyah Jackson's Table Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FAF3E0;
+            color: #1B5E20;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header {
+            background-color: #2E7D32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+    
+        h1, h2, h3 {
+            margin: 10px 0;
+        }
+    
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    
+        ol {
+            background-color: #ffffff;
+            border: 1px solid #EAD7A1;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+    
+        ol li {
+            margin-bottom: 8px;
+        }
+    
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px 0;
+        }
+    
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+    
+       
+        tr:first-child {
+            background-color: #1B5E20;
+            color: white;
+        }
+    
+        tr:nth-child(odd):not(:first-child) {
+            background-color: #FAF3E0; 
+        }
+    
+        tr:nth-child(even):not(:first-child) {
+            background-color: #DDEAD2; 
+        }
+        a {
+            color: white;
+            
+        }
+
+        a:hover {
+            color: #EAD7A1;
+            text-decoration: underline;
+        }
+    
+        figcaption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #2E7D32;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>HTML Tables - Whimsical Company</h2>
+
+        <h3>My Tabular Data</h3>
+<ol>
+    <li>Nova Starling - nova.star@ecoenterprise.com - 12</li>
+    <li>Felix Hawthorne - felix.hawk@gmail.com - 7</li>
+    <li>Marina Skye - marina.skye@yahoo.com - 22</li>
+    <li>Orion Vega - orion.v@ecoenterprise.com - 15</li>
+    <li>Luna Wilder - luna_wild@outlook.com - 5</li>
+    <li>Atlas Monroe - atlas.monroe@ecoenterprise.com - 30</li>
+    <li>Cleo Ravenwood - cleo.raven@gmail.com - 10</li>
+    <li>Ezra Nightshade - ezra.night@yahoo.com - 8</li>
+</ol>
+
+
+<h3>Employee Data in Simple Table</h3>
+<table>
+    <tr>
+        <th id="simple-name">Name</th>
+        <th id="simple-email">Email</th>
+        <th id="simple-years">Years of Service</th>
+    </tr>
+    <tr>
+        <td headers="simple-name">Nova Starling</td>
+        <td headers="simple-email">nova.star@ecoenterprise.com</td>
+        <td headers="simple-years">12</td>
+    </tr>
+    <tr>
+        <td headers="simple-name">Felix Hawthorne</td>
+        <td headers="simple-email">felix.hawk@gmail.com</td>
+        <td headers="simple-years">7</td>
+    </tr>
+    <tr>
+        <td headers="simple-name">Marina Skye</td>
+        <td headers="simple-email">marina.skye@yahoo.com</td>
+        <td headers="simple-years">22</td>
+    </tr>
+    <tr>
+        <td headers="simple-name">Orion Vega</td>
+        <td headers="simple-email">orion.v@ecoenterprise.com</td>
+        <td headers="simple-years">15</td>
+    </tr>
+    <tr>
+        <td headers="simple-name">Luna Wilder</td>
+        <td headers="simple-email">luna_wild@outlook.com</td>
+        <td headers="simple-years">5</td>
+    </tr>
+    <tr>
+        <td headers="simple-name">Atlas Monroe</td>
+        <td headers="simple-email">atlas.monroe@ecoenterprise.com</td>
+        <td headers="simple-years">30</td>
+    </tr>
+    <tr>
+        <td headers="simple-name">Cleo Ravenwood</td>
+        <td headers="simple-email">cleo.raven@gmail.com</td>
+        <td headers="simple-years">10</td>
+    </tr>
+    <tr>
+        <td headers="simple-name">Ezra Nightshade</td>
+        <td headers="simple-email">ezra.night@yahoo.com</td>
+        <td headers="simple-years">8</td>
+    </tr>
+</table>
+
+
+
+        <h3>Employee Data in Complex Table</h3>
+<figure>
+    <figcaption>Employee Information by Department</figcaption>
+    <table>
+        <tr>
+            <th id="dept">Department</th>
+            <th id="name">Name</th>
+            <th id="email">Email</th>
+            <th id="years">Years of Service</th>
+            <th id="salary">Monthly Salary</th>
+        </tr>
+     
+        <tr>
+            <td rowspan="3" headers="dept">Marketing</td>
+            <td headers="name">Nova Starling</td>
+            <td headers="email">nova.star@ecoenterprise.com</td>
+            <td headers="years">12</td>
+            <td headers="salary">$5,000</td>
+        </tr>
+        <tr>
+            <td headers="name">Felix Hawthorne</td>
+            <td headers="email">felix.hawk@gmail.com</td>
+            <td headers="years">7</td>
+            <td headers="salary">$4,200</td>
+        </tr>
+        <tr>
+            <td headers="name">Marina Skye</td>
+            <td headers="email">marina.skye@yahoo.com</td>
+            <td headers="years">22</td>
+            <td headers="salary">$6,800</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" headers="dept">Sales</td>
+            <td headers="name">Orion Vega</td>
+            <td headers="email">orion.v@ecoenterprise.com</td>
+            <td headers="years">15</td>
+            <td headers="salary">$5,500</td>
+        </tr>
+        <tr>
+            <td headers="name">Luna Wilder</td>
+            <td headers="email">luna_wild@outlook.com</td>
+            <td headers="years">5</td>
+            <td headers="salary">$3,500</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3" headers="dept">Operations</td>
+            <td headers="name">Atlas Monroe</td>
+            <td headers="email">atlas.monroe@ecoenterprise.com</td>
+            <td headers="years">30</td>
+            <td headers="salary">$7,000</td>
+        </tr>
+        <tr>
+            <td headers="name">Cleo Ravenwood</td>
+            <td headers="email">cleo.raven@gmail.com</td>
+            <td headers="years">10</td>
+            <td headers="salary">$4,700</td>
+        </tr>
+        <tr>
+            <td headers="name">Ezra Nightshade</td>
+            <td headers="email">ezra.night@yahoo.com</td>
+            <td headers="years">8</td>
+            <td headers="salary">$4,000</td>
+        </tr>
+
+        <tr>
+            <th colspan="3">Total Years of Service</th>
+            <td>109</td>
+            <td>$40,700</td>
+        </tr>
+    </table>
+</figure>
+
+
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTML.include.min.js"></script>
+</body>
+
+</html>
