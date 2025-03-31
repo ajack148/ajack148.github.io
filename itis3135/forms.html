@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affectionate Jellyfish Form || ITIS 3135 Home</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+
+body {
+    background-color: #dfd0b6c5; 
+}
+
+h1, h2 {
+    color: #2d4d33;
+    font-family: 'Segoe UI', sans-serif;
+}
+button {
+  background-color: #355e3b;   
+  color: #fdfcf8;              
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2d4d33;  
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  background-color: #fdfcf8;   
+  color: #355e3b;               
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  box-sizing: border-box;      
+}
+
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  max-width: 420px;
+  background-color: #ffffff; 
+  box-sizing: border-box;
+}
+
+
+label {
+  font-weight: 600;
+  color: #355e3b;
+  display: block;
+  margin-top: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+legend {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(92, 73, 66);
+}
+
+a:hover {
+    color: #2d4d33; 
+}
+
+h3 {
+  color: #2d4d33;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Affectionate Jellyfish Form</h2>
+    
+        <h3>Join Our Skincare Community</h3>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Aaliyah Jackson" required size="30"><br><br>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="555-123-4567" required size="20"><br><br>
+    
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required size="30"><br><br>
+    
+            <fieldset>
+                <legend>Which skincare products are you interested in?</legend>
+                <input type="checkbox" id="cleanser" name="products" value="cleanser">
+                <label for="cleanser">Marine Cleanser</label><br>
+    
+                <input type="checkbox" id="serum" name="products" value="serum">
+                <label for="serum">Glow Serum</label><br>
+    
+                <input type="checkbox" id="moisturizer" name="products" value="moisturizer">
+                <label for="moisturizer">Deep-Sea Moisturizer</label><br>
+            </fieldset><br>
+    
+            <fieldset>
+                <legend>Preferred contact method:</legend>
+                <input type="radio" id="contact-email" name="contact" value="email" required>
+                <label for="contact-email">Email</label><br>
+    
+                <input type="radio" id="contact-phone" name="contact" value="phone">
+                <label for="contact-phone">Phone</label><br>
+            </fieldset><br>
+    
+            <label for="interest">How often would you like skincare tips?</label>
+            <select id="interest" name="interest" required>
+                <option value="">--Choose one--</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="seasonal">Seasonal Recommendations</option>
+            </select><br><br>
+    
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+    
+    <footer>
+        <div data-include="components/footer.html"></div>
+
+           </footer>
+           <script>
+              document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                   document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+           </script>
+           <script src="scripts/HTML.include.min.js"></script>
+    
+    
+</body>
+</html>
