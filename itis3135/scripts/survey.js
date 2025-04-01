@@ -1,6 +1,3 @@
-// survey.js
-
-// === Function: Generate Intro Page ===
 function generateIntro() {
     const name = document.getElementById("name").value;
     const mascot = document.getElementById("mascot").value;
@@ -16,34 +13,41 @@ function generateIntro() {
     const courseInputs = document.querySelectorAll("input[name='courses[]']");
     const courses = Array.from(courseInputs)
       .filter((input) => input.value.trim() !== "")
-      .map((input) => `<li>${input.value}</li>`) 
+      .map((input) => `<li>${input.value}</li>`)
       .join("");
   
     const image = document.getElementById("introImage").files[0];
     const imageURL = image ? URL.createObjectURL(image) : "";
-    const imageHTML = imageURL 
-      ? `<figure><img src="${imageURL}" style="max-width: 300px;"><figcaption>${caption}</figcaption></figure>` 
+    const imageHTML = imageURL
+      ? `<figure><img src="${imageURL}" style="max-width: 300px;"><figcaption>${caption}</figcaption></figure>`
       : "";
   
     const output = `
-      <h4>${name}'s Introduction</h4>
-      <h5>Mascot: ${mascot}</h5>
-      ${imageHTML}
-      <p><strong>Personal Background:</strong> ${personal}</p>
-      <p><strong>Professional Background:</strong> ${professional}</p>
-      <p><strong>Academic Background:</strong> ${academic}</p>
-      <p><strong>Web Development Background:</strong> ${webDev}</p>
-      <p><strong>Primary Platform:</strong> ${platform}</p>
-      <p><strong>Courses Currently Taking:</strong></p>
-      <ul>${courses}</ul>
-      <p><strong>Funny Thing:</strong> ${funny}</p>
-      <p><strong>Anything Else:</strong> ${extra}</p>
-      <p><a href="#" onclick="resetForm()">Reset and Try Again</a></p>
+      <section class="intro-display">
+        <h2>${name}</h2>
+        <h2>${mascot}</h2>
+        ${imageHTML}
+  
+        <p><strong>Personal Background:</strong> ${personal}</p>
+        <p><strong>Professional Background:</strong> ${professional}</p>
+        <p><strong>Academic Background:</strong> ${academic}</p>
+        <p><strong>Background in Web Development:</strong> ${webDev}</p>
+        <p><strong>Primary Computer Platform:</strong> ${platform}</p>
+  
+        <p><strong>Courses Currently Taking:</strong></p>
+        <ul>${courses}</ul>
+  
+        <p><strong>Funny Thing:</strong> ${funny}</p>
+        <p><strong>Anything Else:</strong> ${extra}</p>
+  
+        <p><a href="#" onclick="resetForm()">Reset and Try Again</a></p>
+      </section>
     `;
   
     document.getElementById("introForm").style.display = "none";
     document.getElementById("generatedIntro").innerHTML = output;
   }
+  
   
   // === Function: Reset Form ===
   function resetForm() {
