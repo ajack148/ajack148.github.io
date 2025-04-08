@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  main {
+    background: linear-gradient(135deg, #ede1d1, #baa797, #9a8371);
+    min-height: 100vh;
+    position: relative;
+    color: #24201e;
+    padding-bottom: 80px; /* to make space for footer */
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #332424;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .logo span {
+    color: #ede1d1;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .overlay {
+    background: rgba(255, 255, 255, 0.4);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .form-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+    color: #24201e;
+  }
+
+  .form-section h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .form-section p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form label {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  form input[type="text"], form input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid #baa797;
+    margin-top: 5px;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .radio-group {
+    margin-top: 10px;
+  }
+
+  .radio-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
+  form input[type="radio"] {
+    margin-right: 8px;
+  }
+
+  form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+  }
+
+  form button {
+    margin-top: 1rem;
+    padding: 0.6rem;
+    border: none;
+    background-color: #332424;
+    color: #ede1d1;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  form button:hover {
+    background-color: #9a8371;
+  }
+
+  figure {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  figure img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #332424;
+  }
+
+  footer {
+    background-color: #332424;
+    color: #ede1d1;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .bio {
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  .content img {
+    max-width: 300px;
+    border: 4px solid #332424;
+    margin-bottom: 1rem;
+  }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 2rem 2rem;
+        text-align: center;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color:#ede1d1;
+    }
