@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slideshow - Aaliyah Jackson</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <style>
+    * { 
+        box-sizing: border-box; 
+    }
+    body { 
+        font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; 
+    }
+    header, footer { 
+        background-color: #2b2b2b; color: white; text-align: center; padding: 15px; 
+    }
+    nav ul { 
+        list-style: none; padding: 0; display: flex; justify-content: center; gap: 15px; margin-top: 10px; 
+    }
+    nav a { 
+        color: white; text-decoration: none; font-weight: bold; 
+    }
+
+    a:hover {
+        color: rgb(219, 219, 133);
+    }
+    nav a.active { 
+        text-decoration: underline; 
+    }
+    .container { 
+        position: relative; max-width: 900px; margin: 30px auto; 
+    }
+    .mySlides { 
+        display: none; 
+    }
+    .cursor { 
+        cursor: pointer; 
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      padding: 16px;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      user-select: none;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .next { 
+        right: 0; border-radius: 3px 0 0 3px; 
+    }
+    .prev { 
+        left: 0; border-radius: 0 3px 3px 0; 
+    }
+    .numbertext {
+      position: absolute;
+      top: 0;
+      padding: 8px 12px;
+      color: #fff;
+      font-size: 12px;
+    }
+    .caption-container { 
+        text-align: center; background-color: #222; padding: 10px; color: white; 
+    }
+    .row:after { 
+        content: ""; display: table; clear: both; 
+    }
+    .column { 
+        float: left; width: 14.28%; padding: 4px; 
+    }
+    .demo { 
+        opacity: 0.6; width: 100%; border-radius: 5px; 
+    }
+    .active, .demo:hover { 
+        opacity: 1; 
+    }
+    h2 { 
+        text-align: center; margin-top: 40px; 
+    }
+    ul.prompts { 
+        max-width: 900px; margin: 0 auto; padding: 0 20px; 
+    }
+    ul.prompts li { 
+        margin-bottom: 6px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aaliyah Jackson's Slideshow Gallery</h1>
+    <nav>
+        <a href="./">Home |</a>
+            <a href="introduction.html">Introduction |</a>
+            <a href="contract.html">Contract |</a>
+            <a href="/whimsical/about.html">About My Website! |</a>
+            <a href="website_evaluations.html">Website Evaluations |</a>
+            <a href="/itis3135/tables.html">HTML Tables - Whimsical Company |</a>
+            <a href="/itis3135/byo_intro.html">BYO Intro |</a>
+            <a href="/project1/project_index.html">Project Overview</a>
+    
+    </nav>
+    
+    <nav>
+        <a href="stuff/cRAP/">Ugly Website For Fun! |</a>
+        <a href="/itis3135/hobby/index.html">Hobby Webpage</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="mySlides"><div class="numbertext">1 / 14</div><img src="images/apple.png" alt="A - Apple" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">2 / 14</div><img src="images/acorn.png" alt="A - Acorn" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">3 / 14</div><img src="images/lemon.png" alt="L - Lemon" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">4 / 14</div><img src="images/ice.png" alt="I - Ice" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">5 / 14</div><img src="images/yarn.png" alt="Y - Yarn" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">6 / 14</div><img src="images/airplane.png" alt="A - Airplane" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">7 / 14</div><img src="images/hat.png" alt="H - Hat" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">8 / 14</div><img src="images/jaguar.png" alt="J - Jaguar" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">9 / 14</div><img src="images/axolotl.png" alt="A - Axolotl" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">10 / 14</div><img src="images/cat.png" alt="C - Cat" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">11 / 14</div><img src="images/kite.png" alt="K - Kite" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">12 / 14</div><img src="images/sun.png" alt="S - Sun" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">13 / 14</div><img src="images/orange.png" alt="O - Orange" style="width:100%"></div>
+    <div class="mySlides"><div class="numbertext">14 / 14</div><img src="images/napkin.png" alt="N - Napkin" style="width:100%"></div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="row">
+      <div class="column"><img class="demo cursor" src="images/apple.png" onclick="currentSlide(1)" alt="A - Apple"></div>
+      <div class="column"><img class="demo cursor" src="images/acorn.png" onclick="currentSlide(2)" alt="A - Acorn"></div>
+      <div class="column"><img class="demo cursor" src="images/lemon.png" onclick="currentSlide(3)" alt="L - Lemon"></div>
+      <div class="column"><img class="demo cursor" src="images/ice.png" onclick="currentSlide(4)" alt="I - Ice"></div>
+      <div class="column"><img class="demo cursor" src="images/yarn.png" onclick="currentSlide(5)" alt="Y - Yarn"></div>
+      <div class="column"><img class="demo cursor" src="images/airplane.png" onclick="currentSlide(6)" alt="A - Airplane"></div>
+      <div class="column"><img class="demo cursor" src="images/hat.png" onclick="currentSlide(7)" alt="H - Hat"></div>
+      <div class="column"><img class="demo cursor" src="images/jaguar.png" onclick="currentSlide(8)" alt="J - Jaguar"></div>
+      <div class="column"><img class="demo cursor" src="images/axolotl.png" onclick="currentSlide(9)" alt="A - Axolotl"></div>
+      <div class="column"><img class="demo cursor" src="images/cat.png" onclick="currentSlide(10)" alt="C - Cat"></div>
+      <div class="column"><img class="demo cursor" src="images/kite.png" onclick="currentSlide(11)" alt="K - Kite"></div>
+      <div class="column"><img class="demo cursor" src="images/sun.png" onclick="currentSlide(12)" alt="S - Sun"></div>
+      <div class="column"><img class="demo cursor" src="images/orange.png" onclick="currentSlide(13)" alt="O - Orange"></div>
+      <div class="column"><img class="demo cursor" src="images/napkin.png" onclick="currentSlide(14)" alt="N - Napkin"></div>
+    </div>
+  </div>
+
+
+  <h2>AI Image Prompts Used</h2>
+  <ul class="prompts">
+    <li>A - A shiny red apple on a wooden table, landscape format.</li>
+    <li>A - A small acorn resting on a textured wooden surface.</li>
+    <li>L - A lemon with a green leaf on warm-toned wood background.</li>
+    <li>I - Melting ice cubes on a dark reflective countertop.</li>
+    <li>Y - Colorful yarn balls in a cozy knitting scene.</li>
+    <li>A - An airplane flying through blue skies. </li>
+    <li>H - A straw hat on a bench surrounded by flowers.</li>
+    <li>J - A jaguar walking through a forest path.</li>
+    <li>A - An axolotl on sand.</li>
+    <li>C - A ginger cat sitting on a wood deck outdoors.</li>
+    <li>K - A rainbow kite flying over a grassy hill.</li>
+    <li>S - The sun setting over a golden field.</li>
+    <li>O - An orange splashing juice on a yellow backdrop.</li>
+    <li>N - A neatly folded napkin on a plate and fork setting.</li>
+  </ul>
+
+
+  <footer>
+    <nav>
+        <a href="webpages.charlotte.edu/ajack148">UNCC Homepage |</a>
+        <a href="https://github.com/ajack148/ajack148.github.io">Github |</a>
+        <a href="https://ajack148.github.io/">Github Pages |</a>
+        <a href="https://ajack148.github.io/itis3135/">ITIS3135 Page |</a>
+        <a href="https://www.freecodecamp.org/aaljackson">FreeCodeCamp |</a>
+        <a href="https://www.codecademy.com/profiles/aalisanai">CodeAcademy |</a>
+        <a href="https://www.linkedin.com/in/aaliyah-jackson-1411aa2b6/">LinkedIn |</a>
+        <a href="/whimsical/about.html">Whimsical Website</a>
+        
+        <a href="adoringjellyfish.com">Page Designed by Adoring Jellyfish © 2025</a>, <i>Certified in <a href="https://www.freecodecamp.org/certification/aaljackson/responsive-web-design"> Responsive Web Design</a></i>
+        
+                </nav>
+                <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+                    <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+                   </a>
+                   <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+                     </a>
+                     <p><a href="https://webpages.charlotte.edu/ajack148/itis3135/jaxenterpriser.com/">Jackson Enterprises ©2025</a></p>
+  </footer>
+
+  <script>
+    let slideIndex = 1; // Declare first so it's accessible inside the function
+  
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+  
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+  
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+  
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+  
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  
+    showSlides(slideIndex);
+  
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+  
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+  </script>
+  
+  
+</body>
+</html>
