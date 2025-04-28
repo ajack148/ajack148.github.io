@@ -14,7 +14,7 @@
     min-height: 100vh;
     position: relative;
     color: #24201e;
-    padding-bottom: 80px; /* to make space for footer */
+    padding-bottom: 80px; 
   }
 
   header {
@@ -182,3 +182,39 @@
     a:hover {
         color:#ede1d1;
     }
+
+    .prev, .next {
+      color: black; 
+      font-size: 2rem;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.7); 
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      user-select: none; 
+  }
+  
+  .prev {
+      left: 10px; 
+  }
+  
+  .next {
+      right: 10px; 
+  }
+  
+  .prev:hover, .next:hover {
+      background-color: black;
+      color: white; 
+  }
+  
+  #preorder-message {
+    color: #2e7d32; 
+    font-size: 1rem;
+    margin-top: 1rem;
+}
